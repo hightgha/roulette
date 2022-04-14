@@ -1,0 +1,45 @@
+.Block {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 27px;
+    color: white;
+    border: 1px solid white;
+}
+.red {    background: #f55231;}
+.black {    background: #434343;}
+.green {    background: #6db03b;}
+.half {
+    width: 32px;
+    height: 48px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 16px;
+}
+.mini{
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+}
+.normal {
+    width: 48px;
+    height: 48px;
+}
+.long {
+    width: 98px;
+    height: 48px;
+}
+.longer {
+    width: 48px;
+    height: 148px;
+}
+.extralong {
+    width: 198px;
+    height: 48px;
+}
+.Block:hover{
+    cursor: pointer;
+}

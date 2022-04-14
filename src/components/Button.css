@@ -1,0 +1,12 @@
+.Button {
+    width: 120px;
+    height: 30px;
+    background: #434343;
+    font-size: 27px;
+    color: white;
+    border: 1px solid white;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+}

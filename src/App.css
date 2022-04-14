@@ -1,0 +1,36 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.App {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.image {
+  animation: rotation 10s infinite linear;
+}
+.boardtext {
+  text-transform: uppercase;
+  color: #434343;
+  font-size:  17px;
+}

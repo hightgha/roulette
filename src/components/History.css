@@ -1,0 +1,10 @@
+.History{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 598px;
+    height: 25px;
+    max-height: 26px;
+    max-width: 600px;
+    overflow: hidden;
+    border: 1px solid black;
+}
