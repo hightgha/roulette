@@ -33,4 +33,8 @@
   text-transform: uppercase;
   color: #434343;
   font-size:  17px;
+  flex: 1;
+}
+.boardtextWrapper{
+  display: flex;
 }

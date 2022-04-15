@@ -166,7 +166,6 @@ class App extends React.Component{
                 <Block onClick={() => this.numberBet(30)} size='normal' color='red' number='30' />
                 <Block onClick={() => this.numberBet(33)} size='normal' color='black' number='33' />
                 <Block onClick={() => this.numberBet(36)} size='normal' color='red' number='36' />
-                <Block onClick={() => this.rowBet('3row')} size='half' color='green' number='2 to 1' />
               </div>
               <div className='row'>
                 <Block onClick={() => this.numberBet(2)} size='normal' color='black' number='2' />
@@ -181,7 +180,6 @@ class App extends React.Component{
                 <Block onClick={() => this.numberBet(29)} size='normal' color='black' number='29' />
                 <Block onClick={() => this.numberBet(32)} size='normal' color='red' number='32' />
                 <Block onClick={() => this.numberBet(35)} size='normal' color='black' number='35' />
-                <Block onClick={() => this.rowBet('2row')} size='half' color='green' number='2 to 1' />
               </div>
               <div className='row'>
                 <Block onClick={() => this.numberBet(1)} size='normal' color='red' number='1' />
@@ -196,7 +194,6 @@ class App extends React.Component{
                 <Block onClick={() => this.numberBet(28)} size='normal' color='black' number='28' />
                 <Block onClick={() => this.numberBet(31)} size='normal' color='black' number='31' />
                 <Block onClick={() => this.numberBet(34)} size='normal' color='red' number='34' />
-                <Block onClick={() => this.rowBet('1row')} size='half' color='green' number='2 to 1' />
               </div>
               <div className='row'>
                 <Block onClick={() => this.sectionBet('1-12')} color='green' number='1st 12' size='extralong' />
@@ -215,11 +212,18 @@ class App extends React.Component{
               <Button text='double' onClick={this.double} />
               <Button text='increase' onClick={this.plus} />
               <Button text='decrease' onClick={this.minus} />
-              <div className='boardtext'>Balance: {this.state.balance}$</div>
-              <div className='boardtext'>Current bet: {this.state.betCount}$</div>
-              <div className='boardtext'>Total Bet: {this.state.bets.join(' | ')}</div>
+              <div className='boardtextWrapper'>
+                <span className='boardtext'>Balance<br/>{this.state.balance}</span>
+                <span className='boardtext'>Total Bets<br/>{this.state.bets.join(' | ')}</span>
+                <span className='boardtext'>Current bet<br/>{this.state.betCount}</span>
+              </div>
               <Button text='start' onClick={this.startGame} />
               <History>{this.state.history}</History>
+            </div>
+            <div>
+              <Block onClick={() => this.rowBet('3row')} size='half' color='green' number='2 to 1' />
+              <Block onClick={() => this.rowBet('2row')} size='half' color='green' number='2 to 1' />
+              <Block onClick={() => this.rowBet('1row')} size='half' color='green' number='2 to 1' />
             </div>
           </div>
           
